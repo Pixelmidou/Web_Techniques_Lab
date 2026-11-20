@@ -1,1 +1,1 @@
-This text was fetched by the fetch api
+Hello! This text was loaded from sample.txt using the Fetch API.

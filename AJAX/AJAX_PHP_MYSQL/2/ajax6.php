@@ -11,12 +11,12 @@
         <label for="dep">Departments : </label>
         <select id="choice">
             <option value="0">Select a department</option>
-            <?php 
-            $con = new mysqli("localhost","root","","dvmais");
-            $query = $con -> prepare("SELECT codeser,libelle FROM service");
-            $query -> execute();
-            $query = $query -> get_result();
-            while ($row = $query -> fetch_array()) {
+            <?php
+            require_once __DIR__ . "/../../../db.php";
+            $query = $con->prepare("SELECT codeser, libelle FROM service");
+            $query->execute();
+            $res = $query->get_result();
+            while ($row = $res->fetch_array()) {
                 echo "<option value='$row[0]'>$row[1]</option>";
             }
             ?>

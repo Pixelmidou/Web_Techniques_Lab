@@ -1,10 +1,10 @@
 <?php
-$con = new mysqli("localhost","root","","bac2013");
-$i = $_POST["i"];
-$query = $con -> prepare("SELECT * FROM eleve LIMIT 0,?");
-$query -> bind_param("i", $i);
-$query -> execute();
-$res = $query -> get_result();
-$arr = $res -> fetch_all(MYSQLI_NUM);
+require_once __DIR__ . "/../../../db.php";
+
+$i = isset($_POST["i"]) ? intval($_POST["i"]) : 1;
+$query = $con->prepare("SELECT numero, nomprenom, datenais FROM eleve LIMIT 0, ?");
+$query->bind_param("i", $i);
+$query->execute();
+$arr = $query->get_result()->fetch_all(MYSQLI_NUM);
 echo json_encode($arr);
 ?>

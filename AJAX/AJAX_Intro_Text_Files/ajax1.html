@@ -29,21 +29,17 @@
                 - "onreadystatechange" executes everytime the readyState changes (which is several times)
             */
 
-            /*
             // xhr.onload - Defines a callback function to be called when the request is received (loaded)
             xhr.onload = function() {
                 // gives status 4 (onload only executed when the request is completed readyState = 4)
-                // console.log("ReadyState (in diffirent parts of the code) : ", xhr.readyState)
                 // this.status - holds the HTTP status of the XMLHttpRequest (written below in the comments)
                 if (this.status == 200) {
-                    // this.responseText - gets the text recieved by the request
-                    // console.log(this.responseText)
-                    document.getElementById("text").innerHTML = this.responseText
+                    // this.responseText - gets the text received by the request
+                    document.getElementById("t").innerHTML = this.responseText
                 } else if (this.status == 404) {
-                    document.getElementById("text").innerHTML = "Not Found"
+                    document.getElementById("t").innerHTML = "Not Found"
                 }
             }
-            */
            
             /*
             // OPTIONAL : used for loaders (progress bars, loading screens, etc...)

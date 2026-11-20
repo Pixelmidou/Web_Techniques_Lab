@@ -1,4 +1,9 @@
 <?php
-if (isset($_GET["name"])) echo "Your name is : " . $_GET["name"];
-if (isset($_POST["fname"]) && isset($_POST["lname"])) echo "Your First Name is : " . $_POST["fname"] . "<br>Your Last Name is : ". $_POST["lname"];
+if (isset($_GET["name"])) {
+    echo "Your name is : " . htmlspecialchars($_GET["name"], ENT_QUOTES, "UTF-8");
+}
+if (isset($_POST["fname"]) && isset($_POST["lname"])) {
+    echo "Your First Name is : " . htmlspecialchars($_POST["fname"], ENT_QUOTES, "UTF-8")
+       . "<br>Your Last Name is : " . htmlspecialchars($_POST["lname"], ENT_QUOTES, "UTF-8");
+}
 ?>

@@ -15,7 +15,7 @@
             xhr = new XMLHttpRequest()
             xhr.open("GET", "https://api.github.com/users", true)
             xhr.onload = function() {
-                if (this.status = 200) {
+                if (this.status == 200) {
                     users = JSON.parse(this.responseText)
                     output = ""
                     for (i = 0; i < users.length; i++) {

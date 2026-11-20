@@ -1,1 +1,1 @@
-This was fetched by AJAX
+Hello! This text was loaded from sample.txt using jQuery .load().

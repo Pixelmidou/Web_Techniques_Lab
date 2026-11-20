@@ -3,33 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fetch POST to PHP</title>
 </head>
 <body>
+    <h1>Fetch POST to PHP</h1>
+    <div>
+        <label for="valI">Value i: </label>
+        <input type="number" id="valI" value="10">
+        <label for="valJ">Value j: </label>
+        <input type="number" id="valJ" value="25">
+        <input type="button" value="Send POST" id="sendBtn">
+    </div>
+    <p id="output">Click "Send POST" to send values to fetchapi5.php.</p>
+
     <script>
-        var i = 69
-        var j = 666
-        send()
+        document.getElementById("sendBtn").addEventListener("click", send)
+
         async function send() {
-            // fetch("fetchapi5.php", {
-            //     method: "POST",
-            //     headers: {
-            //         "Content-type": "application/x-www-form-urlencoded"
-            //     },
-            //     body: "i=" + i + "&j=" + j
-            // })
-            // .then( response => response.text() )
-            // .then( data => console.log(data) )
-            response = await fetch("fetchapi5.php", {
+            let i = document.getElementById("valI").value
+            let j = document.getElementById("valJ").value
+
+            let response = await fetch("fetchapi5.php", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/x-www-form-urlencoded"
                 },
-                body: "i=" + i + "&j=" + j
+                body: "i=" + encodeURIComponent(i) + "&j=" + encodeURIComponent(j)
             })
-            data = await response.text()
+            let data = await response.text()
             console.log(data)
+            document.getElementById("output").textContent = "PHP Response: " + data
         }
+
+        // Send once on load too
+        send()
     </script>
 </body>
 </html>

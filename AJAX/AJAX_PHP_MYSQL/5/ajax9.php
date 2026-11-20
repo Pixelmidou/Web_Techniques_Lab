@@ -46,7 +46,7 @@
             xhr.onload = function() {
                 if (this.status == 200) {
                     arr = JSON.parse(this.responseText)
-                    x = arr[2]
+                    x = arr[arr.length - 1]
                     buts = ""
                     h = 1
                     for (y = 1; y <= x; y += 2) {
@@ -82,7 +82,8 @@
             xhr.send("i=" + pval)
         }
         function next() {
-            if (i < stu[2] - 2) {
+            var total = stu[stu.length - 1]
+            if (i < total - 2) {
                 i += 2
             }
         }

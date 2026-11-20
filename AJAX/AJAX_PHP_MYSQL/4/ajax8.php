@@ -38,7 +38,8 @@
             xhr.send("i=" + i)
         }
         function next() {
-            if (i < stu[1] - 1) {
+            var total = stu[stu.length - 1]
+            if (i < total - 1) {
                 i++
             }
         }
