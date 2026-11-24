@@ -2,7 +2,7 @@
 
 A personal collection of hands-on web development demos built to practice and showcase core front-end and full-stack techniques: **AJAX (XMLHttpRequest)**, **Asynchronous JavaScript**, **Fetch API & Promises**, **jQuery / jQuery UI**, and **PHP / MySQL**.
 
-> **Try them live:** <https://weblab.great-site.net/>
+> **Try them live:** <https://weblab.great-site.net/>  
 > An interactive lab interface is hosted separately so you can browse the source code and run the demos directly in the browser.
 
 ---
