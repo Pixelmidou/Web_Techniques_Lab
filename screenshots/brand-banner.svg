@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="Web Techniques Lab — 38 hands-on web development demos">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d63ff"/>
+      <stop offset="100%" stop-color="#5b21ff"/>
+    </linearGradient>
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="280" rx="18" fill="url(#bg)"/>
+
+  <!-- Subtle decorative circles -->
+  <circle cx="1050" cy="60" r="140" fill="#ffffff" fill-opacity="0.06"/>
+  <circle cx="1120" cy="240" r="110" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="120" cy="250" r="95" fill="#ffffff" fill-opacity="0.05"/>
+
+  <!-- Left brand icon badge -->
+  <rect x="64" y="56" width="52" height="52" rx="12" fill="url(#cardGlow)" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.5"/>
+  <text x="90" y="90" text-anchor="middle" fill="#ffffff" font-family="Consolas, Monaco, monospace" font-size="22" font-weight="700">&lt;/&gt;</text>
+
+  <!-- Main Title & Tagline -->
+  <text x="134" y="92" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.5">Web Techniques Lab</text>
+  <text x="66" y="146" fill="#e0e7ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="20" font-weight="400">38 hands-on demos comparing Async JS, AJAX (XHR), Fetch API, jQuery &amp; PHP/MySQL.</text>
+
+  <!-- Pill badges -->
+  <g font-family="Consolas, Monaco, monospace" font-size="13" font-weight="600" fill="#ffffff">
+    <rect x="66" y="182" width="136" height="34" rx="8" fill="#0f172a" fill-opacity="0.38"/>
+    <text x="134" y="204" text-anchor="middle">Vanilla JS</text>
+
+    <rect x="214" y="182" width="132" height="34" rx="8" fill="#0f172a" fill-opacity="0.38"/>
+    <text x="280" y="204" text-anchor="middle">Fetch API</text>
+
+    <rect x="358" y="182" width="132" height="34" rx="8" fill="#0f172a" fill-opacity="0.38"/>
+    <text x="424" y="204" text-anchor="middle">AJAX / XHR</text>
+
+    <rect x="502" y="182" width="122" height="34" rx="8" fill="#0f172a" fill-opacity="0.38"/>
+    <text x="563" y="204" text-anchor="middle">jQuery 3.7</text>
+
+    <rect x="636" y="182" width="138" height="34" rx="8" fill="#0f172a" fill-opacity="0.38"/>
+    <text x="705" y="204" text-anchor="middle">PHP + MySQL</text>
+  </g>
+
+  <!-- Right mini stats card -->
+  <rect x="860" y="54" width="276" height="172" rx="14" fill="url(#cardGlow)" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5"/>
+  <text x="892" y="96" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="32" font-weight="800">38</text>
+  <text x="944" y="94" fill="#e0e7ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15">Live runnable demos</text>
+
+  <line x1="892" y1="116" x2="1104" y2="116" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1"/>
+
+  <text x="892" y="152" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="22" font-weight="700">28 Static</text>
+  <text x="1005" y="152" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif" font-size="18">·  10 PHP</text>
+
+  <text x="892" y="194" fill="#dbeafe" font-family="Consolas, Monaco, monospace" font-size="13">Live preview + source viewer</text>
+</svg>
